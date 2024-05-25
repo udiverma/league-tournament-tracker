@@ -1,0 +1,26 @@
+/* src/ComingSoon.css */
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+  }
+  
+  .coming-soon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+  }
+  
+  .coming-soon .content {
+    max-width: 600px;
+  }
+  
+  .coming-soon img {
+    width: 200px;
+    margin-top: 20px;
+  }  
