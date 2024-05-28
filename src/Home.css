@@ -1,0 +1,183 @@
+/* Home.module.css */
+.statsContainer {
+    background-color: #660000;
+    display: flex;
+    flex-direction: column;
+    font-size: 32px;
+    font-weight: 400;
+    padding-bottom: 17px;
+    height: 200vh;
+  }
+  
+  .header {
+    background-color: #cc5500;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  @media (max-width: 991px) {
+    .header {
+      max-width: 100%;
+    }
+  }
+  
+  .nav {
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    color: #efb489;
+    padding: 0 10x;
+  }
+  
+  @media (max-width: 991px) {
+    .nav {
+      max-width: 100%;
+      flex-wrap: wrap;
+    }
+  }
+  
+  .logo,
+  .statsIcon {
+    object-fit: cover;
+    object-position: center;
+  }
+  
+  .logo {
+    aspect-ratio: 1.06;
+    width: 83px;
+  }
+  
+  .statsIcon {
+    aspect-ratio: 8;
+    width: 155px;
+  }
+  
+  .title {
+    font-family: Inter, sans-serif;
+    flex-grow: 1;
+    margin: auto 0;
+  }
+  
+  @media (max-width: 991px) {
+    .title {
+      max-width: 100%;
+    }
+  }
+  
+  .buttons {
+    background-color: #f1e6d3;
+    display: flex;
+    max-width: 100%;
+    align-items: center;
+    color: #000;
+    white-space: nowrap;
+    justify-content: center;
+    padding: 0 60px;
+  }
+  
+  @media (max-width: 991px) {
+    .buttons {
+      max-width: 100%;
+      white-space: initial;
+      padding: 0 20px;
+    }
+  }
+  
+  .btn {
+    font-family: Inter, sans-serif;
+    border: 1px solid #000;
+    background-color: #f1e6d3;
+    padding: 18px 26px;
+    margin: 0 4px;
+  }
+  
+  @media (max-width: 991px) {
+    .btn {
+      padding: 18px 20px;
+      white-space: initial;
+    }
+  }
+  
+  .mainContent {
+    border-radius: 45px;
+    background-color: #f1e6d3;
+    align-self: center;
+    display: flex;
+    margin-top: 33px;
+    width: 85vw;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    padding: 80px 60px;
+    height: 150vh;
+  }
+  
+  @media (max-width: 991px) {
+    .mainContent {
+      padding: 0 20px;
+    }
+  }
+  
+  .article {
+    border-radius: 35px;
+    border: 1px solid #000;
+    background-color: #e6e6e6;
+    display: flex;
+    width: 455px;
+    max-width: 100%;
+    flex-direction: column;
+    align-items: center;
+    margin: 16px 0 40px;
+    padding: 20px 60px 43px;
+  }
+  
+  @media (max-width: 991px) {
+    .article {
+      padding: 0 20px;
+    }
+  }
+  
+  .matchStats {
+    display: flex;
+    width: 235px;
+    max-width: 100%;
+    flex-direction: column;
+    padding: 0 15px 0 38px;
+  }
+  
+  @media (max-width: 991px) {
+    .matchStats {
+      padding-left: 20px;
+    }
+  }
+  
+  .matchTitle {
+    color: #888;
+    font-family: Inter, sans-serif;
+  }
+  
+  .matchDetails {
+    color: #f00;
+    font-family: Inter, sans-serif;
+    margin-top: 14px;
+  }
+  
+  .teamBlue,
+  .percentageBlue {
+    color: rgba(0, 86, 252, 1);
+  }
+  
+  .teamRed,
+  .percentageRed {
+    color: rgba(255, 0, 0, 1);
+  }
+  
+  .matchGraph {
+    background-color: #fe0000;
+    border-radius: 50%;
+    margin-top: 19px;
+    height: 229px;
+  }
