@@ -1,17 +1,26 @@
 // src/App.js
 import React from 'react';
-import ComingSoon from './ComingSoon';
-import Home from './Home';
-//import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-//import Players from './components/Players';
+import Stats from './pages/Stats';
+import { BrowserRouter as Router, Routes, Route} from 'react-router-dom';
+import Players from './pages/Players';
+import Champs from './pages/Champs';
+import Teams from './pages/Teams';
+import Games from './pages/Games';
 
 function App() {
   return (
-    //<Router>
+    <Router>
     <div className="App">
-      <Home/>
     </div>
-    //</Router>
+
+      <Routes>
+          <Route path="/" element={<Stats />} />
+          <Route path="/players" element={<Players />} />
+          <Route path="/teams" element={<Teams />} />
+          <Route path="/champs" element={<Champs />} />
+          <Route path="/games" element={<Games />} />
+      </Routes>
+    </Router>
   );
 }
 

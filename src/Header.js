@@ -1,13 +1,10 @@
-// Home.js
-import * as React from "react";
-import "./Home.css";
+// Header.js
+import { Link } from 'react-router-dom';
 
-const Home = () => {
+const Header = () => {
   return (
-    <>
-      <section className="statsContainer">
-        <header className="header">
-          <nav className="nav">
+    <div>
+        <nav className="nav">
             <img
               loading="lazy"
               src="https://cdn.builder.io/api/v1/image/assets/TEMP/04ef114c6dcb9e754879a1cfa4c5c9f21d55b37953fc736ca96554dd3a0f73c8?apiKey=28325f7459f743cbaa61f77fd7d719c3&"
@@ -22,21 +19,25 @@ const Home = () => {
               className="statsIcon"
             />
           </nav>
-          <div className="buttons">
+        <div className="buttons">
+            <Link to="/">
             <button className="btn">STATS</button>
+            </Link>
+            <Link to="/players">
             <button className="btn">PLAYERS</button>
+            </Link>
+            <Link to="/teams">
             <button className="btn">TEAMS</button>
+            </Link>
+            <Link to="/champs">
             <button className="btn">CHAMPS</button>
+            </Link>
+            <Link to="/games">
             <button className="btn">GAMES</button>
-          </div>
-        </header>
-        <main className="mainContent">
-            <title>PLAYER PAGE dsdCOMING SOON</title>
-
-        </main>
-      </section>
-    </>
+            </Link>
+        </div>
+      </div>
   );
 };
 
-export default Home;
+export default Header;
